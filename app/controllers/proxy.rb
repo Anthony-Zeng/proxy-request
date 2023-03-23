@@ -10,7 +10,7 @@ module Proxy
       requires :url, type: String, desc: 'URL of the target API endpoint'
       optional :method, type: String, default: 'GET', values: %w[GET POST PUT DELETE], desc: 'HTTP method'
       optional :headers, type: Hash, default: {}, desc: 'HTTP headers'
-      optional :payload, type: Hash, default: {}, desc: 'Request payload'
+      optional :payload
       optional :headers_field, type: Array, default: [], desc: 'Need return headers'
       optional :verify_ssl, type: Boolean, default: false, desc: 'Need return headers'
     end
